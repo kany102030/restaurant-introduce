@@ -5,7 +5,9 @@ app.engine('handlebars', exphbs.engine({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
 app.use(express.static('public'))
 const port = 3000
-
+app.get('/show', function (req, res) {
+  res.render('show')
+})
 app.get('/', function (req, res) {
   res.render('index')
 })
