@@ -28,8 +28,8 @@ npm run start
 
 listening on http://localhost:3000
 ```
-6. 打開瀏覽器輸入以下網址，即可看到DEMO畫面
-http://localhost:3000/
+6. 打開瀏覽器輸入http://localhost:3000/
+
 
 ## 開發套件版本
 - Node.js: 16.16.0
