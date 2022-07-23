@@ -10,7 +10,7 @@ const port = 3000
 app.get('/search', function (req, res) {
   const keyword = req.query.keyword
   selectedRestaurants = restaurantList.filter(function (restaurtant) {
-    return restaurtant.name.toLocaleLowerCase().includes(keyword.trim().toLocaleLowerCase())
+    return restaurtant.name.toLocaleLowerCase().includes(keyword.trim().toLocaleLowerCase()) || restaurtant.category.toLocaleLowerCase().includes(keyword.trim().toLocaleLowerCase())
   })
 
   res.render('index', { selectedRestaurants: selectedRestaurants, keyword: keyword })
